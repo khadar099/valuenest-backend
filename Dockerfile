@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY valuenest-backend-0.0.1-SNAPSHOT.jar app.jar
+COPY target/valuenest-backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the application port (default 8080, change if needed)
 EXPOSE 8282
